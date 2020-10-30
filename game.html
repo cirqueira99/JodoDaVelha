@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="game.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"/>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Jogo da Velha</title>    
+</head>
+<body>
+    <!-- div que mantem a div#container ao centro -->
+    <div id="container">        
+        <div id="content">
+            <!-- div contém os elemtentos dos jogo -->
+            <div id="infogame">
+               <!-- titulo -->
+                <div id="d1">
+                    <h1>Jogo da Velha</h1>
+                </div>
+                <!-- placar jogador 1 -->
+                <div id="d2" class="players">
+                    <h2>Jogador 1</h2>
+                    <div class="pt">
+                        <h1 id="pointP1"></h1>
+                    </div>
+                </div>
+                <!-- div que contém o game -->
+                <div id="d3">
+                    <div id="game">
+                        <div id="box1" onclick="checkMovement(event)"></div>            
+                        <div id="box2" onclick="checkMovement(event)"></div>
+                        <div id="box3" onclick="checkMovement(event)"></div>
+                        <div id="box4" onclick="checkMovement(event)"></div>
+                        <div id="box5" onclick="checkMovement(event)"></div>
+                        <div id="box6" onclick="checkMovement(event)"></div>
+                        <div id="box7" onclick="checkMovement(event)"></div>
+                        <div id="box8" onclick="checkMovement(event)"></div>
+                        <div id="box9" onclick="checkMovement(event)"></div>
+                    </div>
+                </div>
+                <!-- placar jogador 2 -->
+                <div id="d4" class="players">
+                    <h2>Jogador 2</h2>
+                    <div class="pt">
+                        <h1 id="pointP2"></h1>
+                    </div>
+                </div>
+                <!-- botão novo jogo -->
+                <div id="d5">
+                    <button class="buttom newGame" onclick="clearGame()">Novo Jogo</button>
+                </div>
+                <!-- botão zerar placar -->
+                <div id="d6">
+                    <button class="buttom zero" onclick="zeroGame()">
+                        Zerar Placar
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script type="text/javascript" src="./game.js"></script>
+</body>
+</html>

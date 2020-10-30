@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+      background: #948c188c;
+      font-family: 'Roboto Slab', serif;
+}
+/* containers ------------------------- */
+#container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 800px;
+    height: 550px;
+    margin-top: 2%;
+
+    color: white;
+}
+
+/* botões ------------------------- */
+.buttom {
+    width: 70%;
+    height: 56px;
+    margin-top: 16px;
+    
+    border: 0;
+    border-radius: 10px;
+    
+    font-weight: 500;
+    font-size: 1.1em;
+    font-family: 'Roboto Slab', serif;
+
+    color: white;
+    
+}
+
+button.newGame {
+    background: #396FAC;
+}
+button.newGame:hover {
+    background: #2a5586;
+}
+
+button.zero {
+    background: #7416b3;
+}
+button.zero:hover {
+    background: #108d35;
+}
+
+/* caixa do game  ------------------------- */
+#infogame {
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: 15% 70% 15%;
+
+    width: 650px;
+    height: 540px;
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 45px;
+}
+
+.pt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    height: 60px;
+    margin-top: 20px;
+
+    border: inset;
+    border-radius: 10px;
+    
+    background: #948c1854;
+    
+    font-weight: 500;    
+}
+#pointP1 {
+    color: rgb(236, 41, 41);
+}
+#pointP2 {
+    color: rgb(39, 146, 20);
+}
+
+/* divs dos elemento da tela de jogo ------------------------- */
+#d1, #d3, #d5, #d6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#d1 {
+    grid-column-start: 2; 
+    grid-column-end: span 2;  
+ }
+ 
+ #d2 {
+     grid-row-start: 2;     
+ }
+ 
+ #d3 {
+     grid-column-start: 2; 
+     grid-column-end: span 2;  
+ }
+ 
+ #d5 {
+     grid-column-start: 2;  
+ }
+
+ /* tabuleiro ------------------------- */
+#game {
+    display: grid;
+    grid-template-columns: 33.2% 33.2% 33.2%;
+
+    width: 89%;
+    height: 92%;
+
+    background: rgba(255, 255, 255, 0.185);   
+    border-radius: 8%; 
+ }
+
+ #game div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 115px;
+    height: 114px;
+ }
+
+ #game h1 {
+     font-size: 4em;
+ }
+ 
+ /* casas do tabuleiro ------------------------- */
+ #box1, #box2, #box4, #box5, #box7, #box8 {
+   border-right: solid 3px #664b0d;
+ }
+
+ #box1, #box2, #box3, #box4, #box5, #box6 {
+    border-bottom: solid 3px #664b0d;
+ }
+
+ #b{
+     color: rgb(41, 25, 4);
+ }
